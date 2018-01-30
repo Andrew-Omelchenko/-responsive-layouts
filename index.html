@@ -12,22 +12,22 @@
   </head>
   <body>
     <header class="flex-container header">
-      <div class="btn">
-        <i class="fa fa-clock-o fa-fw label" aria-hidden="true"></i>&nbsp;
-        00:00:00
+      <div class="lbl">
+        <i class="fa fa-clock-o fa-fw label" aria-hidden="true"></i>
+        <time id="clock">00:00:00</time>
       </div>
       <div class="flex-container center">
-        <img class="logo" src="img/pizza-cat.png" alt="Pizza Cat">
+        <img class="logo" src="img/pizza-cat.png" alt="logo">
       </div>
-      <div class="btn">
-        <i class="fa fa-user" aria-hidden="true" fa-fw label></i>&nbsp;
+      <div class="lbl">
+        <i class="fa fa-user fa-fw label" aria-hidden="true"></i>
         <a href="#">Login/Signup</a>
       </div>
     </header>
     <main>
       <div class="flex-container center">
         <button class="btn" type="button">
-          <i class="fa fa-plus" aria-hidden="true" fa-fw label></i>&nbsp;
+          <i class="fa fa-plus fa-fw label" aria-hidden="true"></i>
           ADD NEW PIZZA
         </button>
       </div>
@@ -42,8 +42,8 @@
               <span>#1</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 1min</strong>
+              <strong><money>$32.00</money></strong>
             </div>      
           </div>
         </div>
@@ -54,11 +54,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#2</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 3min</strong>
+              <strong><money>$6.95</money></strong>
             </div>      
           </div>
         </div>
@@ -69,11 +69,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#3</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 4min</strong>
+              <strong><money>$15.00</money></strong>
             </div>      
           </div>
         </div>
@@ -84,11 +84,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#4</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 10min</strong>
+              <strong><money>$18.50</money></strong>
             </div>      
           </div>
         </div>
@@ -99,11 +99,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#5</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 2min</strong>
+              <strong><money>$21.10</money></strong>
             </div>      
           </div>
         </div>
@@ -114,11 +114,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#6</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 7min</strong>
+              <strong><money>$14.00</money></strong>
             </div>      
           </div>
         </div>
@@ -129,11 +129,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#7</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 15min</strong>
+              <strong><money>$23.45</money></strong>
             </div>      
           </div>
         </div>
@@ -144,11 +144,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#8</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 9min</strong>
+              <strong><money>$98.15</money></strong>
             </div>      
           </div>
         </div>
@@ -159,11 +159,11 @@
           <div class="details">
             <div class="flex-container">
               <span>XX:XX:XX</span>
-              <span>#1</span>
+              <span>#9</span>
             </div> 
             <div class="flex-container">
-              <span>ETA: 1min</span>
-              <span>XX</span>
+              <strong>ETA: 7min</strong>
+              <strong><money>$34.70</money></strong>
             </div>      
           </div>
         </div>
@@ -171,11 +171,12 @@
     </main>
     <footer class="flex-container footer">
         <span>
-          Kottans, Kottans str., 1. <a href="tel: 57778887">tel.: 577-788-87</a> 
+          Kottans, Kottans str., 1. <a href="Tel: 577-788-87">Tel.: 577-788-87</a> 
         </span>
         <span>
           Pizza Manager&copy;, 2018
         </span>
     </footer>
+    <script src="js/code.js"></script>
   </body>
 </html>

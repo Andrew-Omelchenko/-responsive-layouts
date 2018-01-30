@@ -20,25 +20,43 @@
 
 @media screen and (max-width: 480px) {
   @include flex-settings;
+
+  .lbl {
+    text-align: center;
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 959px) {
+@media screen and (min-width: 481px) and (max-width: 960px) {
   header, main, footer {
     margin-left: 0;
     margin-right: 0;
   }
 
-  @include grid-settings;
+  @include grid-settings-2-column;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 961px) and (max-width: 1440px) {
   header, main, footer {
-    width: 960px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include grid-settings-3-column;
+}
+
+@media screen and (min-width: 1441px) {
+  header, main, footer {
+    width: 1440px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @include grid-settings; 
+  @include grid-settings-3-column; 
+}
+
+strong {
+  font-size: 16pt;
+  font-weight: bold;
 }
 
 .header, .footer {
@@ -51,19 +69,46 @@
 }
 
 .footer {
+  font-family: "Roboto", sans-serif;
+  color: $fg-color-footer;
   background: $bg-color-footer;
+  padding: 20px 10px 20px 10px;
+
+  a {
+    color: $fg-color-footer;
+  }
 }
 
 .logo {
   width: 30%;
 }
 
+.lbl {
+  font-family: "Roboto", sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  color: $fg-color-header;
+  width: 210px;
+  margin: 10px;
+
+  a {
+    color: $fg-color-header;
+    text-decoration: none;
+  }
+}
+
 .btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
   height: 42px;
-  width: 126px;
+  width: 210px;
   border: 1px solid gray;
   border-radius: 5px;
   margin: 10px;
+  color: $fg-color-btn;
+  background: $bg-color-btn;
+  cursor: pointer;
 }
 
 .tile {
@@ -71,12 +116,15 @@
 }
 
 .img-container {
-  background: $bg-color-img;
+  border-radius: 50%;
+  background: url("../img/wood.png");
+  margin-top: 10px;
 }
 
 .details {
   background: $bg-color-details;
-  border: 1px solid $bg-color-img;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .img-container, .details {
