@@ -78,6 +78,11 @@ strong {
   background: $bg-color-footer;
   padding: 20px 10px 20px 10px;
 
+  span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   a {
     color: $fg-color-footer;
   }
