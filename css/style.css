@@ -18,7 +18,17 @@
   .position-7:hover,
   .position-8:hover,
   .position-9:hover {
-    opacity: 0.7; }
+    opacity: 0.9; }
+    .position-1:hover .img-container,
+    .position-2:hover .img-container,
+    .position-3:hover .img-container,
+    .position-4:hover .img-container,
+    .position-5:hover .img-container,
+    .position-6:hover .img-container,
+    .position-7:hover .img-container,
+    .position-8:hover .img-container,
+    .position-9:hover .img-container {
+      border: 3px solid lightsalmon; }
 
 * {
   font-family: "Roboto", sans-serif;
@@ -243,6 +253,8 @@ strong {
   padding: 20px 10px 20px 10px; }
   .footer a {
     color: white; }
+  .footer a:hover {
+    opacity: 0.7; }
 
 .logo {
   width: 30%; }
@@ -280,6 +292,7 @@ strong {
 
 .img-container {
   border-radius: 50%;
+  border: 3px solid transparent;
   background: url("../img/wood.png");
   margin-top: 10px; }
 
