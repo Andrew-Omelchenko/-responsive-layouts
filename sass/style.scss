@@ -21,6 +21,10 @@
 @media screen and (max-width: 480px) {
   @include flex-settings;
 
+  .logo {
+    display: none;
+  }
+
   .lbl {
     text-align: center;
   }
@@ -95,6 +99,10 @@ strong {
     color: $fg-color-header;
     text-decoration: none;
   }
+
+  a:hover {
+    opacity: 0.5;
+  }
 }
 
 .btn {
@@ -109,6 +117,10 @@ strong {
   color: $fg-color-btn;
   background: $bg-color-btn;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .tile {

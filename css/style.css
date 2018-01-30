@@ -9,6 +9,16 @@
 .position-9 {
   border-radius: 10px;
   background: chocolate; }
+  .position-1:hover,
+  .position-2:hover,
+  .position-3:hover,
+  .position-4:hover,
+  .position-5:hover,
+  .position-6:hover,
+  .position-7:hover,
+  .position-8:hover,
+  .position-9:hover {
+    opacity: 0.7; }
 
 * {
   font-family: "Roboto", sans-serif;
@@ -49,6 +59,9 @@
   .position-9 {
     width: 100%;
     margin-bottom: 10px; }
+
+  .logo {
+    display: none; }
 
   .lbl {
     text-align: center; } }
@@ -244,6 +257,8 @@ strong {
   .lbl a {
     color: maroon;
     text-decoration: none; }
+  .lbl a:hover {
+    opacity: 0.5; }
 
 .btn {
   font-family: "Roboto", sans-serif;
@@ -257,6 +272,8 @@ strong {
   color: white;
   background: brown;
   cursor: pointer; }
+  .btn:hover {
+    opacity: 0.7; }
 
 .tile {
   width: 100%; }
